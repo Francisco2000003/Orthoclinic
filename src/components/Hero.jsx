@@ -39,8 +39,27 @@ export default function Hero(){
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="#equipo" className="btn btn-ghost">Conoce al equipo</a>
-              <Link to="/book/dr-hernandez" className="btn btn-primary">Apartar cita</Link>
+                  <a
+                      href="#equipo"
+                      className="group relative inline-flex items-center justify-center overflow-hidden rounded-2xl px-5 py-2.5 text-sm font-semibold text-white shadow-xl ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:shadow-2xl active:translate-y-0"
+                    >
+                      <span className="pointer-events-none absolute -inset-1 opacity-0 blur-2xl transition duration-300 group-hover:opacity-100 bg-[radial-gradient(circle_at_30%_30%,rgba(56,189,248,0.55),transparent_60%),radial-gradient(circle_at_70%_70%,rgba(37,99,235,0.45),transparent_55%)]" />
+                      <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(56,189,248,0.45),rgba(37,99,235,0.30),rgba(255,255,255,0.10))]" />
+                      <span className="pointer-events-none absolute inset-[1px] rounded-2xl bg-slate-950/80" />
+                      <span className="pointer-events-none absolute -left-1/2 top-0 h-full w-1/2 skew-x-[-20deg] bg-white/10 opacity-0 transition duration-500 group-hover:left-[120%] group-hover:opacity-100" />
+
+                      <span className="relative inline-flex items-center gap-2">
+                        <span className="grid h-8 w-8 place-items-center rounded-xl bg-sky-500/10 ring-1 ring-sky-400/25">
+                          <svg viewBox="0 0 24 24" className="h-4 w-4 text-sky-300" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                          </svg>
+                        </span>
+                        Conoce al equipo
+                      </span>
+                    </a>
             </div>
           </div>
 

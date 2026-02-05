@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { CalendarDays, Menu, X } from 'lucide-react'
 
+
 export default function Navbar() {
   const [open, setOpen] = useState(false)
 
@@ -21,13 +22,6 @@ export default function Navbar() {
             <a href="#servicios" className="text-slate-600 dark:text-slate-300">Servicios</a>
             <a href="#contacto" className="text-slate-600 dark:text-slate-300">Contacto</a>
           </nav>
-
-          <div className="hidden md:flex items-center gap-2">
-            <a href="#equipo" className="btn btn-ghost">Ver equipo</a>
-            <Link to="/book/dr-hernandez" className="btn btn-primary">
-              <CalendarDays className="h-4 w-4" /> Agendar
-            </Link>
-          </div>
 
           {/* Mobile toggler */}
           <button

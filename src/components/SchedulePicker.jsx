@@ -61,25 +61,7 @@ Tel: ${values.phone}`
       {/* Calendario diario */}
       <DailyCalendar person={person} onPick={onPickSlot} />
 
-      {/* Mostramos el slot elegido (solo lectura) */}
-      <div className="grid grid-cols-2 gap-3">
-        <div>
-          <label className="text-xs text-slate-500">Fecha seleccionada</label>
-          <input
-            className="mt-1 w-full rounded-xl border border-slate-200 bg-slate-50 p-2 text-sm"
-            value={pickedDate || ""}
-            readOnly
-          />
-        </div>
-        <div>
-          <label className="text-xs text-slate-500">Horario seleccionado</label>
-          <input
-            className="mt-1 w-full rounded-xl border border-slate-200 bg-slate-50 p-2 text-sm"
-            value={pickedTime || ""}
-            readOnly
-          />
-        </div>
-      </div>
+      
 
       {/* Datos del paciente */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">

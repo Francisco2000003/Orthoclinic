@@ -4,6 +4,10 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Book from './pages/Book'
 import NotFound from './pages/NotFound'
+import DoctorProfile from "./pages/DoctorProfile";
+import AgendarFisioterapia from "./pages/AgendarFisioterapia";
+import FisioProfiles from "./pages/FisioProfiles";
+
 
 export default function App() {
   return (
@@ -14,6 +18,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/book/:slug" element={<Book />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/doctor/:slug" element={<DoctorProfile />} />
+            <Route path="/agenda/fisioterapia" element={<AgendarFisioterapia />} />
+            <Route path="/fisioterapia/equipo" element={<FisioProfiles />} />
         </Routes>
       </main>
       <Footer />
